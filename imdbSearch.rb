@@ -91,7 +91,7 @@ class WebDriverTest < Test::Unit::TestCase
      currentTime = Time.now.strftime("%Y-%m-%d").to_s     # format by date only 
      fileName = 'testResult'  +currentTime + '.txt'
      f = File.open(fileName , 'a+')
-     f.puts "IMDB search test result for  " + Time.now.to_s + theResult 
+     f.puts "IMDB search test result for  " + Time.now.to_s + theResult + "."
      f.close
    end 
   
